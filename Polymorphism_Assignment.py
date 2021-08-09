@@ -19,6 +19,7 @@ class Employee(User):
     base_pay = 50.00
     department = "Silky Smooth"
     pin_number = "0528"
+    assignment = "Born to lead, not to read"
 
     #Same method as parent class "User"
     #Difference is we're using pin instead of password to login
@@ -38,6 +39,7 @@ class Assistant(User):
     base_pay = 40.00
     department = "Silky Smooth"
     id_number = "6660"
+    tasks = "Doing everything"
 
    #Same method as parent class "User"
     #Difference is we're using id instead of password to login
