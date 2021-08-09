@@ -1,15 +1,3 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
-#
-# Python Ver:   3.5.1
-#
-# Author:       Daniel A. Christie
-#
-# Purpose:      Phonebook Demo. Demonstrating OOP, Tkinter GUI module,
-#               using Tkinter Parent and Child relationships.
-#
-# Tested OS:  This code was written and tested to work with Windows 10.
-
 import os
 from tkinter import *
 from tkinter import messagebox
@@ -63,6 +51,7 @@ def create_db(self):
 
 
 def first_run(self):
+    data = ('John', 'Doe', 'John Doe', '111-111-1111','jdoe@email.com')
     conn = sqlite3.connect('db_phonebook.db')
     with conn:
         cur = conn.cursor()
@@ -248,3 +237,4 @@ def onUpdate(self):
 
 if __name__ == "__main__":
     pass
+
