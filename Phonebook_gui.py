@@ -3,12 +3,13 @@ import tkinter as tk
 
 # Be sure to import our other modules 
 # so we can have access to them
-import student_tracking_main
-import student_tracking_func
+import drill50_phonebook_main
+import drill50_phonebook_func
 
 
 
 def load_gui(self):
+ 
     self.lbl_fname = tk.Label(self.master,text='First Name:')
     self.lbl_fname.grid(row=0,column=0,padx=(27,0),pady=(10,0),sticky=N+W)
     self.lbl_lname = tk.Label(self.master,text='Last Name:')
