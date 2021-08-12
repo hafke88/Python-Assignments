@@ -32,24 +32,21 @@ class ParentWindow(Frame):
     
            
 
-        htmlText=
-        '''<html>
-        <body>
-        <h1>'''
-        +sm+
-        '''</h1>         
-        </body>
-        </html>'''
+        
+
+        
+
+        
+
+    def submit(self):
+        sm = self.txtStatement.get()
+        htmlText='''<html><body><h1>'''+ sm + '''</h1></body></html>'''
+        webbrowser.open("Hello.html", new=0, autoraise=True)
 
         f = open("Hello.html", "w")
         f.write(htmlText)
         f.close()
-
-        webbrowser.open("Hello.html", new=0, autoraise=True)
-
-    def submit(self):
-        sm = self.txtStatement.get()
-        print('htmlText' + 'sm')
+        
 
 if __name__ == "__main__":
     root = Tk()
