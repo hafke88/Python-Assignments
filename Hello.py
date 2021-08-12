@@ -28,24 +28,28 @@ class ParentWindow(Frame):
         self.btnSubmit = Button (self.master, text="Submit", command=self.submit)
         self.btnSubmit.pack()
 
+        
+    
+           
+
+        htmlText=
+        '''<html>
+        <body>
+        <h1>'''
+        +sm+
+        '''</h1>         
+        </body>
+        </html>'''
+
+        f = open("Hello.html", "w")
+        f.write(htmlText)
+        f.close()
+
+        webbrowser.open("Hello.html", new=0, autoraise=True)
+
     def submit(self):
-        sm = self.varStatement.get()
-        get('htmlText' + 'self.txtStatement.get')
-
-htmlText='''<html>
-<body>
-<h1>
-Stay tuned for our amazing summer sale!
-</h1>
-</body>
-</html>'''
-
-f = open("Hello.html", "w")
-f.write(htmlText)
-f.close()
-
-#open and read the file after the appending:
-webbrowser.open("Hello.html", new=0, autoraise=True)
+        sm = self.txtStatement.get()
+        print('htmlText' + 'sm')
 
 if __name__ == "__main__":
     root = Tk()
