@@ -28,9 +28,7 @@ class ParentWindow(Frame):
         self.btnSubmit = Button (self.master, text="Submit", command=self.submit)
         self.btnSubmit.pack()
 
-        
     
-           
 
         
 
