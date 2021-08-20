@@ -25,8 +25,8 @@ for file in fileList:
     filename = filePathList[-1] # The last element is a the filename
     
     # If modified within last 24 hours, then copy to destination folder
-    modifyDateLimit = modifyDate + datetime.timedelta(days=1)
+    modifyDateLimit = modifyDate - datetime.timedelta(days=1)
 
     # If the file was edited less then 24 hours ago then copy it
-    if modifyDateLimit > todaysDate:
+    if modifyDateLimit > modifyDate:
         shutil.copy2(file, destinationPath + filename)

@@ -3,10 +3,10 @@ import os
 
 
 #set where the source of the files are
-source = 'C:/Users/hafke/OneDrive/Desktop/Destination/'
+source = 'C:/Users/hafke/OneDrive/Desktop/Home/'
 
 #set the destination path to folderB
-destination = 'C:/Users/hafke/OneDrive/Desktop/Home/'
+destination = 'C:/Users/hafke/OneDrive/Desktop/Destination/'
 files = os.listdir(source)
 
 for i in files:
