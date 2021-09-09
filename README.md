@@ -6,7 +6,7 @@ Most of the files you will see in here are just practice assignments that were v
 
 Projects:
 
-- File Transer:
+- File Transfer:
   - This project allows the user to choose transfer all .txt files from one chosen directory to another. All files that are moved will be saved in a database.
 
 - Phonebook:
